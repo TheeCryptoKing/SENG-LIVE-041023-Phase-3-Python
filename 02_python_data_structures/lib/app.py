@@ -28,41 +28,57 @@ print(pet_names)
 #8. ✅ Return the frequency of a given element 
 print(pet_names.count("Lea"))
 
-
 # Updating Lists
 #9. ✅ Change the first element to all uppercase 
-
+pet_names[0].upper()
+# didnt work 
+print(pet_names)
 
 #10. ✅ Append a new name to the list
-
+pet_names.append('Darth Vader')
+print(pet_names)
 
 #11. ✅ Add a new name at a specific index
-
+pet_names.insert(8, 'Luke SkyWalker')
+print(pet_names)
 
 #12. ✅ Add two lists together 
-
+list1 = [ '1','2','3','4']
+list2 = ['5','6','7','8']
+print(list1.insert(3, list2))
+# didnt work 
 
 #13. ✅ Remove the final element from the list
-
+pet_names.remove('Darth Vader')
+# was i suppose to do another way?
+print(pet_names)
 
 #14. ✅ Remove element by specific index
-
+pet_names.pop(7)
+print(pet_names)
 
 #15. ✅ Remove a specific element 
-
+pet_names.remove('Luke SkyWalker')
+print(pet_names)
 
 #16. ✅ Remove all pet names from the list
-
+pet_names.clear()
+print(pet_names)
 
 #Tuple 
 # 📚 Review With Students:
     # Mutable, Immutable, Changeable, Unchangeable
 
 #17. ✅ Create a Tuple of pet 10 ages 
-
+first_Tuple = [('Cleo',4), ('Aslma', 6),('Nero', 2), ('Dante', 10), ('Incel',1), ('Byron',3), ('Ash', 7), ('Saxsa', 8), ('Peach', 9), ('Claire',5)]
 
 #18. ✅ Print the first pet age
-
+# sorting using the second key
+def sorted_tuple(first_Tuple):
+    # returning the key you want to sort by???
+    return first_Tuple[1]
+first_Tuple.sort(key = sorted_tuple)
+print(first_Tuple)
 
 # Testing Changeability 
 #19. ✅ Attempt to remove an element with ".pop" (should error)
